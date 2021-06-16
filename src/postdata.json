@@ -1,0 +1,17 @@
+{
+  "postdata": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "city": "typicode"
+    },
+      {
+      "id": 2,
+      "name": "json-servereee",
+      "city": "typicodeddd"
+    }
+    
+  ]
+
+ 
+}
