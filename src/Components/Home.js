@@ -21,7 +21,7 @@ class Home extends React.Component{
       <Link className="nav-link" to="/">Home</Link>
     </li>
     <li className="nav-item">
-      <Link className="nav-link" to="/postdata">PostData</Link>
+      <Link className="nav-link" to="/PostData">PostData</Link>
     </li>
   </ul>
 </nav>
@@ -29,7 +29,7 @@ class Home extends React.Component{
                 <div id="content">
                 
            <Route path="/" exact component={APIHoc} ></Route>  
-           <Route path="/postdata"  component={PostHoc} ></Route>  
+           <Route path="/PostData"  component={PostHoc} ></Route>  
 
 
                 </div>

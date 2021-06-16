@@ -2,13 +2,8 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 
-const Title= ({titleData,postdata})=>{
-    let tdata=titleData.map(x=> (
-        <tr key={x.title}>
-             <td>{x.title}</td>
-             <td>{x.content}</td>
-         </tr>
-    ))
+const Title= ({postdata})=>{
+ 
 
     let [title,setTitle] =useState()
     let [content,setContent]=useState()
@@ -18,7 +13,7 @@ const Title= ({titleData,postdata})=>{
 <table>
             <tr>
                 <td>title</td>
-                <td><input type="text" onChange={(e)=>setTitle(e.target.value)} 
+                <td><input type="text"  required onChange={(e)=>setTitle(e.target.value)} 
                 value={title}/></td>
             </tr>
             <tr>
@@ -27,9 +22,9 @@ const Title= ({titleData,postdata})=>{
                 value={content}/></td>
             </tr>
          <tr>
-            <Link to="/postdata"  colspan="2">
-                <button className="btn btn-danger" style={{ marginLeft:"50px"}}
-                onClick={()=>postdata(title,content)}>Postdata</button>
+            <Link to="/PostData"  colspan="2">
+                <button className="btn btn-danger"  style={{ marginLeft:"50px"}}
+                onClick={()=>postdata(title,content)}>PostData</button>
                 </Link>
                 </tr>
         </table>

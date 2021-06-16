@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.1",
+    "concurrently": "^6.2.0",
     "jquery": "^3.6.0",
     "proper": "^0.5.1",
     "react": "^17.0.2",
@@ -19,7 +20,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm start \"\" json-server --port 2058 postdata.json\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
